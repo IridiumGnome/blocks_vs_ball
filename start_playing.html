@@ -1,0 +1,44 @@
+<!-- just a comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>GAME</title>
+</head>
+<body>
+	<h1 id='title'>blocks vs. ball</h1>
+	<button id="rulesBTN" class="btn rulesBTN">Help</button>
+	<button id='pauseBTN' class="btn pauseBTN">PAUSE</button>
+	<div id="rules" class="rules">
+		<h2>How To Play:</h2>
+		<p>
+			You can use right and left keys to move the paddle.
+		</p>
+		<p>
+			Avoid the bombs. If you collide with the bomb, you die.
+		</p>
+		<p>
+			If you miss the ball, you die.
+		</p>
+		<A HREF="description.html">Game Logic</A>
+		<br>
+		<br>
+		<button id="closeBTN" class="btn">Close</button>
+	</div>
+	<label for="speedBall" id="speedL" class="speed">Choose the ball speed:</label>
+	<select name="speedBall" id="speedBall" class="speed">
+		<option value="easy">EASY</option>
+		<option value="medium">MEDIUM</option>
+		<option value="hard">HARD</option>
+	</select>
+	<label for="speedBomb" id="speedL2" class="speed">Choose the bomb frequency:</label>
+	<select name="freqBomb" id="freqBomb" class="speed">
+		<option value="1">1</option>
+		<option value="3">2</option>
+		<option value="5">3</option>
+	</select>
+	<canvas id="canvas" width="700" height="450"></canvas>
+	<button id="startBTN" class="btn startBTN">Play</button>
+	<script src="script.js"></script>
+</body>
+</html>
